@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {View, Text, FlatList} from 'react-native'
 import styled from 'styled-components'
-import fetchHistory from '../../businessLogic/fetchHistory'
+import {fetchHistory} from '../../businessLogic'
 import {GameResult} from 'src/types'
-import HistoryRowItem from './views/HistoryRowItem'
-import ListItemSeparator from './views/ListItemSeparator'
+import {HistoryRowItem, ListItemSeparator} from './views'
 
 export default () => {
   const [history, setHistory] = useState<GameResult[] | null>(null)

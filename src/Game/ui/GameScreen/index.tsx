@@ -1,12 +1,10 @@
 import React, {useState, useLayoutEffect} from 'react'
 import {View, Text, TextInput, Button} from 'react-native'
 import styled from 'styled-components'
-import generateRandomNumber from '../../businessLogic/generateRandomNumber'
-import checkGuess from '../../businessLogic/checkGuess'
-import ResultView from './views/ResultView'
-import saveGameResult from '../../gateways/saveGameResult'
-import ResetButton from './views/ResetButton'
-import { CheckGuessResult } from 'src/types'
+import {generateRandomNumber, checkGuess} from '../../businessLogic'
+import {saveGameResult} from '../../gateways'
+import {ResultView, ResetButton} from './views'
+import {CheckGuessResult} from 'src/types'
 
 export default ({navigation}) => {
   const [value, setValue] = useState<string>('')

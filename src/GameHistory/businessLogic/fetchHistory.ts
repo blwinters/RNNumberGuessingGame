@@ -1,4 +1,4 @@
-import fetchHistory from '../gateways/fetchHistory'
+import {fetchHistory} from '../gateways'
 import {GameResult} from 'src/types'
 
 export default async (): Promise<GameResult[]> => {
