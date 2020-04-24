@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage'
-import {GameResult} from '../../types'
+import {GameResult} from 'src/types'
 
 export default async (): Promise<GameResult[]> => {
   const keys = await AsyncStorage.getAllKeys()

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Text} from 'react-native'
-import {CheckGuessResult} from '../../../businessLogic/checkGuess'
+import {CheckGuessResult} from 'src/types'
 
 interface Props {
   result: CheckGuessResult | null

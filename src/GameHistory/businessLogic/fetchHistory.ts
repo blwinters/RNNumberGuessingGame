@@ -1,5 +1,5 @@
 import fetchHistory from '../gateways/fetchHistory'
-import {GameResult} from '../../types'
+import {GameResult} from 'src/types'
 
 export default async (): Promise<GameResult[]> => {
   return (await fetchHistory()).sort((a, b) => {

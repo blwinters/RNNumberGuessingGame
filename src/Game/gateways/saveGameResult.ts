@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage'
-import {GameResult} from '../../types'
+import {GameResult} from 'src/types'
 
 export default async (numGuesses: number, answer: number) => {
   const date = new Date()

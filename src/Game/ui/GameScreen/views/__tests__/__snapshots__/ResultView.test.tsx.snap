@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResetButton.tsx when the result is \`correct\` should match snapshot 1`] = `
+<Text>
+  That's correct! 🎉
+</Text>
+`;
+
+exports[`ResetButton.tsx when the result is \`tooHigh\` should match snapshot 1`] = `
+<Text>
+  42
+   is too high.
+</Text>
+`;
+
+exports[`ResetButton.tsx when the result is \`tooLow\` should match snapshot 1`] = `
+<Text>
+  42
+   is too low.
+</Text>
+`;

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {View, Text, FlatList} from 'react-native'
 import styled from 'styled-components'
 import fetchHistory from '../../businessLogic/fetchHistory'
-import {GameResult} from '../../../types'
+import {GameResult} from 'src/types'
 import HistoryRowItem from './views/HistoryRowItem'
 import ListItemSeparator from './views/ListItemSeparator'
 
