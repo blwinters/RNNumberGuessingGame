@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from 'react-native'
-import {CheckGuessResult} from 'src/types'
+import {CheckGuessResult} from 'src/Game/types'
 
 interface Props {
   result: CheckGuessResult | null

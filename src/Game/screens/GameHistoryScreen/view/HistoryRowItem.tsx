@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 import moment from 'moment'
-import {GameResult} from 'src/types'
+import {GameResult} from 'src/Game/types'
 
 interface Props {
   gameResult: GameResult

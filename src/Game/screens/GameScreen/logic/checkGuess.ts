@@ -1,4 +1,4 @@
-import { CheckGuessResult } from "src/types"
+import { CheckGuessResult } from "src/Game/types"
 
 
 export default (guess: number, num: number): CheckGuessResult => {

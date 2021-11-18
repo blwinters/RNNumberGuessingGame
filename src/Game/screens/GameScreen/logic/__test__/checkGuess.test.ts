@@ -1,6 +1,6 @@
 import React from 'react'
 import checkGuess from '../checkGuess'
-import {CheckGuessResult} from 'src/types'
+import {CheckGuessResult} from 'src/Game/types'
 
 describe('checkGuess.ts', () => {
   var result: CheckGuessResult | null

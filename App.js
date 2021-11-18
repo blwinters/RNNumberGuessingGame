@@ -8,10 +8,10 @@
 
 import 'react-native-gesture-handler'
 import React from 'react'
-import {NavigationContainer} from '@react-navigation/native'
-import {createStackNavigator} from '@react-navigation/stack'
-import GameScreen from './src/Game/ui/GameScreen'
-import HistoryScreen from './src/GameHistory/ui/HistoryScreen'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import GameScreen from './src/Game/screens/GameScreen'
+import HistoryScreen from './src/Game/screens/GameHistoryScreen'
 
 const Stack = createStackNavigator()
 
@@ -22,12 +22,12 @@ const App = () => {
         <Stack.Screen
           name="Game"
           component={GameScreen}
-          options={{title: 'Number Guessing Game'}}
+          options={{ title: 'Number Guessing Game' }}
         />
         <Stack.Screen
           name="History"
           component={HistoryScreen}
-          options={{title: 'Past games'}}
+          options={{ title: 'Past games' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

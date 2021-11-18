@@ -1,7 +1,8 @@
 import React from 'react'
 import AsyncStorage from '@react-native-community/async-storage'
-import fetchHistory from '../fetchHistory'
-import {GameResult} from 'src/types'
+
+import fetchStoredHistory from '../fetchStoredHistory'
+import { GameResult } from 'src/Game/types'
 
 describe('fetchHistory.ts', () => {
   let result: GameResult[] = []
@@ -43,7 +44,7 @@ describe('fetchHistory.ts', () => {
       return null
     })
 
-    result = await fetchHistory()
+    result = await fetchStoredHistory()
   })
 
   it('returns the expected data', () => {

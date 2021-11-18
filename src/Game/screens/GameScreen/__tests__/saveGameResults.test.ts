@@ -1,7 +1,5 @@
-import React from 'react'
 import AsyncStorage from '@react-native-community/async-storage'
 import saveGameResult from '../saveGameResult'
-import {GameResult} from 'src/types'
 
 describe('saveGameResults.ts', () => {
   const mockDate = new Date('2019-06-19T00:07:19.309Z')

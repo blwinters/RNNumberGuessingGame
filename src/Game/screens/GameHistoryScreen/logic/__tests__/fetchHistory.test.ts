@@ -1,8 +1,8 @@
 import React from 'react'
 import {mocked} from 'ts-jest/utils'
-import fetchGateway from '../../gateways/fetchHistory'
+import fetchGateway from '../fetchStoredHistory'
 import fetchHistory from '../fetchHistory'
-import {GameResult} from 'src/types'
+import {GameResult} from 'src/Game/types'
 
 jest.mock('../../gateways/fetchHistory', () => {
   return jest.fn()
